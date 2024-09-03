@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Telegram Accounts</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#myInput").on("keyup", function() {
+                    var value = $(this).val().toLowerCase();
+                    $("button").filter(function() {
+                      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                    });
+                  });
+                });
+            
+        </script>
+    </head>
+    <body>
+      
+        <center>
+            <input id="myInput" type="text" placeholder="Search here">
+            <button  class="first-button">
+                Telegram Channels<br>(Personalities)
+            </button>
+            <a href="https://t.me/AbdulHabibAttariOfficial" target="_blank">
+                <button class="second-div">
+                    Abdul Habib Attari
+                </button>
+            </a>
+            <a href="https://t.me/MRSMofficial" target="_blank">
+                <button class="second-div">
+                    Muhammad Raza Saqib Mustafai
+                </button>
+            </a>
+            <button class="first-button">
+                Telegram Channels<br>(Countries)
+            </button>
+            <a href="https://t.me/dawateislamiindiaofficial" target="_blank">
+                <button class="second-div">
+                    Dawateislami India
+                </button>
+            </a>
+            <a href="https://t.me/dawateislamiar" target="_blank">
+                <button class="second-div">
+                    Dawateislami Arabic
+                </button>
+            </a>
+
+    </center>
+        
+    </body>
+</html>
